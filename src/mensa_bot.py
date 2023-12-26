@@ -7,7 +7,7 @@ from poly import fetch_mensa_data, parse_mensa_data
 from uni import get_uni_msg
 
 # Set the language for later use of the weekday
-locale.setlocale(locale.LC_TIME, 'de_DE')
+#locale.setlocale(locale.LC_TIME, 'de_DE')
 
 # Create a ConfigParser object & Read the INI file
 config = configparser.ConfigParser()
