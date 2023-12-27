@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import requests
 import json
 import configparser
@@ -5,13 +6,21 @@ from datetime import datetime, date
 import locale
 from poly import fetch_mensa_data, parse_mensa_data
 from uni import get_uni_msg
+import os
+
 
 # Set the language for later use of the weekday
 #locale.setlocale(locale.LC_TIME, 'de_DE')
 
-# Create a ConfigParser object & Read the INI file
+# Get the current directory
+current_directory = os.path.dirname(os.path.abspath(__file__))
+
+# Construct the relative path to the config file
+config_file_path = os.path.join(current_directory, "..", "externalData", "config.ini")
+
+# Read the configuration file
 config = configparser.ConfigParser()
-config.read('./externalData/config.ini')
+config.read(config_file_path)
 
 # Access the values
 credentialFilePath = config['Paths']['credentialFilePath']
