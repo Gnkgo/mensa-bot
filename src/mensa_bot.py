@@ -21,7 +21,7 @@ def send_msg():
 
 
 if __name__ == "__main__":
-    api_url = "https://idapps.ethz.ch/cookpit-pub-services/v1/weeklyrotas?client-id=ethz-wcms&lang=en&rs-first=0&rs-size=50&valid-after=2023-12-05"
+    api_url = "https://idapps.ethz.ch/cookpit-pub-services/v1/weeklyrotas?client-id=ethz-wcms&lang=en&rs-first=0&rs-size=50&valid-after=2024-04-01"
     mensa_data = fetch_mensa_data(api_url)
 
     # create BODY of MSG
