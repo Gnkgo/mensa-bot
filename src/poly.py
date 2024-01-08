@@ -8,8 +8,28 @@ def fetch_mensa_data(api_url):
         return response.json()
     except requests.exceptions.RequestException as e:
         print(f"Error fetching Mensa data: {e}")
+     
         return None
 
+def extract_todays_menu(api_response):
+    today = datetime.now().date()
+    today_menu = []
+
+    for weekly_rota in api_response.get("weekly-rota-array", []):
+        valid_from_date = datetime.strptime(weekly_rota.get("valid-from"), "%Y-%m-%d").date()
+        valid_to_date = datetime.strptime(weekly_rota.get("valid-to"), "%Y-%m-%d").date()
+
+        # Skip entries not within the desired date range
+        if today < valid_from_date or today > valid_to_date:
+            continue
+
+        for day in weekly_rota.get("day-of-week-array", []):
+            if day.get("day-of-week-code") == today.weekday() + 1:  # weekday() returns 0 for Monday
+                today_menu.extend(day.get("opening-hour-array", []))
+
+    return today_menu
+
+print(str(extract_todays_menu(fetch_mensa_data("https://idapps.ethz.ch/cookpit-pub-services/v1/weeklyrotas?client-id=ethz-wcms&lang=en&rs-first=0&rs-size=50&valid-after=2024-01-01"))))
 def parse_mensa_data(mensa_data):
     if mensa_data is None:
         return "Keine Daten vorhanden."
@@ -19,6 +39,7 @@ def parse_mensa_data(mensa_data):
     current_date = datetime.strptime(current_date_str, "%Y-%m-%d").date()
     current_day_of_week = current_date.weekday() + 1  # Get current day of the week (1 = Monday, 2 = Tuesday, ..., 7 = Sunday)
 
+    
     weekly_rota_array = mensa_data.get("weekly-rota-array", [])
 
     for weekly_rota in weekly_rota_array:
@@ -40,11 +61,10 @@ def parse_mensa_data(mensa_data):
 
         for day_of_week in day_of_week_array:
             day_of_week_code = day_of_week.get("day-of-week-code")
-
             # Skip entries for other days
-            if day_of_week_code != current_day_of_week:
-                continue
-
+            #if day_of_week_code != current_day_of_week:
+             #   continue
+            
             opening_hour_array = day_of_week.get("opening-hour-array", [])
 
             for opening_hour in opening_hour_array:
@@ -74,5 +94,7 @@ def parse_mensa_data(mensa_data):
                             customer_group_desc = price.get("customer-group-desc-short")
                             price_value = price.get("price")
                             result += (f"- *Price for {customer_group_desc}: * {price_value}\n")
+
+    print (result)
 
     return result if result != "" else "Keine Daten vorhanden."

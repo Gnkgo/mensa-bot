@@ -1,3 +1,4 @@
 externalData/config.ini
 whatsappAPICredentials.json
 Logs
+src/__pycache__
