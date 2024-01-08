@@ -5,7 +5,7 @@ from utils import is_float
 
 def generate_menu_msg(menu_type, menu_data):
     msg = f"*{menu_type}* ({menu_data['preis']}):\n"
-    msg += f"{menu_data['menu']}\nF: {mnrtg(menu_data['gesamtgewicht'], menu_data['fat'])}, K: {mnrtg(menu_data['gesamtgewicht'], menu_data['carbohydrates'])}, P: {mnrtg(menu_data['gesamtgewicht'], menu_data['protein'])}, Calories: {menu_data['calories']}\n"
+    msg += f"{menu_data['menu']}\nF: {mnrtg(menu_data['gesamtgewicht'], menu_data['fat'])}, K: {mnrtg(menu_data['gesamtgewicht'], menu_data['carbohydrates'])}, P: {mnrtg(menu_data['gesamtgewicht'], menu_data['protein'])}, Calories: {mnrtg(menu_data['gesamtgewicht'], menu_data['calories'])}\n"
     return msg
 
 def mnrtg(gesamtgewicht, naehrwert):

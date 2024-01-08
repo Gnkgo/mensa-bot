@@ -44,7 +44,7 @@ if __name__ == "__main__":
     mensa_data = fetch_mensa_data(api_url)
 
     # create BODY of MSG
-    uni_msg = get_uni_msg("obere-mensa", "mittagsverpfegung-farm", "mittagsverpfegung-butcher")
+    uni_msg = get_uni_msg("obere-mensa", "mittagsverpflegung-farm", "mittagsverpflegung-butcher")
     uni_msg_lower = get_uni_msg("untere-mensa", "mittag-garden", "mittag-pure-asia")
     poly_msg = parse_mensa_data(mensa_data)
 
