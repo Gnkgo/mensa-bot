@@ -7,6 +7,7 @@ import locale
 from poly import fetch_mensa_data, parse_mensa_data
 from uni import get_uni_msg
 import os
+import time
 
 
 # Set the language for later use of the weekday
@@ -25,8 +26,17 @@ config.read(config_file_path)
 # Access the values
 credentialFilePath = config['Paths']['credentialFilePath']
 
-def send_msg():
-    return requests.post(url, headers=headers, data=json.dumps(data))
+def send_msg_welcome():
+    return requests.post(url, headers=headers, data=json.dumps(data_welcome))
+
+def send_msg_polymensa():
+    return requests.post(url, headers=headers, data=json.dumps(data_poly))
+
+def send_msg_upperunimensa():
+    return requests.post(url, headers=headers, data=json.dumps(data_upper_uni))
+
+def send_msg_lowerunimensa():
+    return requests.post(url, headers=headers, data=json.dumps(data_lower_uni))
 
 
 if __name__ == "__main__":
@@ -34,8 +44,8 @@ if __name__ == "__main__":
     mensa_data = fetch_mensa_data(api_url)
 
     # create BODY of MSG
-    uni_msg = get_uni_msg()
-    uni_msg_lower = "Wiieterii Mensas sind bald verfüegbar."
+    uni_msg = get_uni_msg("obere-mensa", "mittagsverpfegung-farm", "mittagsverpfegung-butcher")
+    uni_msg_lower = get_uni_msg("untere-mensa", "mittag-garden", "mittag-pure-asia")
     poly_msg = parse_mensa_data(mensa_data)
 
     # create MSG for Whatsapp API
@@ -54,25 +64,75 @@ if __name__ == "__main__":
         'Content-Type': 'application/json'
     }
 
-    msg_body_params = [
-    {"type": "text", "text": datetime.now().strftime("%#d. %b")},
-        {"type": "text", "text": poly_msg.replace("\n", "\\n")},
-        {"type": "text", "text": uni_msg.replace("\n", "\\n")},
-        {"type": "text", "text": uni_msg_lower.replace("\n", "\\n")}
-    ]
 
-    data = {
+    data_welcome = {
         'messaging_product': 'whatsapp',
         'to': recipient_phone_number,
         'type': 'template',
         'template': {
-            'name': 'mensa_bot',
+            'name': 'welcome',
             'language': {'code': 'de'},
             'components': [
-                {'type': 'body', 'parameters': msg_body_params}
+                {'type': 'body', 'parameters': [
+                    {"type": "text", "text": datetime.now().strftime("%#d. %b")},
+                ]}
             ]
         }
     }
 
-    #response = send_msg()
-    #print(f"Whatsapp API status: {response.status_code}" + ("" if response.status_code == 200 else f" - {response.content}"))
+    data_poly = {
+        'messaging_product': 'whatsapp',
+        'to': recipient_phone_number,
+        'type': 'template',
+        'template': {
+            'name': 'polymensa',
+            'language': {'code': 'de'},
+            'components': [
+                {'type': 'body', 'parameters': [
+                    {"type": "text", "text": poly_msg.replace("\n", "\\n")},
+                ]}
+            ]
+        }
+    }
+
+    data_upper_uni = {
+        'messaging_product': 'whatsapp',
+        'to': recipient_phone_number,
+        'type': 'template',
+        'template': {
+            'name': 'upperunimensa',
+            'language': {'code': 'de'},
+            'components': [
+                {'type': 'body', 'parameters': [
+                    {"type": "text", "text": uni_msg.replace("\n", "\\n")},
+                ]}            ]
+        }
+    }
+
+    data_lower_uni = {
+        'messaging_product': 'whatsapp',
+        'to': recipient_phone_number,
+        'type': 'template',
+        'template': {
+            'name': 'lowerunimensa',
+            'language': {'code': 'de'},
+            'components': [
+                {'type': 'body', 'parameters': [
+                    {"type": "text", "text": uni_msg_lower.replace("\n", "\\n")},
+                ]}            ]
+        }
+    }
+
+
+    response1 = send_msg_welcome()
+    time.sleep(3)
+    response2 = send_msg_polymensa()
+    time.sleep(3)
+    response3 = send_msg_upperunimensa()
+    time.sleep(3)
+    response4 = send_msg_lowerunimensa()
+
+    print(f"Whatsapp API status: {response1.status_code}" + ("" if response1.status_code == 200 else f" - {response1.content}"))
+    print(f"Whatsapp API status: {response2.status_code}" + ("" if response2.status_code == 200 else f" - {response2.content}"))
+    print(f"Whatsapp API status: {response3.status_code}" + ("" if response3.status_code == 200 else f" - {response3.content}"))
+    print(f"Whatsapp API status: {response4.status_code}" + ("" if response4.status_code == 200 else f" - {response4.content}"))

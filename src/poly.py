@@ -16,9 +16,14 @@ def extract_todays_menu(api_response):
     today_menu = []
 
     for weekly_rota in api_response.get("weekly-rota-array", []):
-        valid_from_date = datetime.strptime(weekly_rota.get("valid-from"), "%Y-%m-%d").date()
-        valid_to_date = datetime.strptime(weekly_rota.get("valid-to"), "%Y-%m-%d").date()
-
+        valid_from_value = weekly_rota.get("valid-from")
+        valid_to_value = weekly_rota.get("valid-to")
+    
+        if valid_from_value is not None and valid_to_value is not None:
+            valid_from_date = datetime.strptime(weekly_rota.get("valid-from"), "%Y-%m-%d").date()
+            valid_to_date = datetime.strptime(weekly_rota.get("valid-to"), "%Y-%m-%d").date()
+        else:
+            pass
         # Skip entries not within the desired date range
         if today < valid_from_date or today > valid_to_date:
             continue
@@ -29,7 +34,7 @@ def extract_todays_menu(api_response):
 
     return today_menu
 
-print(str(extract_todays_menu(fetch_mensa_data("https://idapps.ethz.ch/cookpit-pub-services/v1/weeklyrotas?client-id=ethz-wcms&lang=en&rs-first=0&rs-size=50&valid-after=2024-01-01"))))
+#print(str(extract_todays_menu(fetch_mensa_data("https://idapps.ethz.ch/cookpit-pub-services/v1/weeklyrotas?client-id=ethz-wcms&lang=en&rs-first=0&rs-size=50&valid-after=2024-01-01"))))
 def parse_mensa_data(mensa_data):
     if mensa_data is None:
         return "Keine Daten vorhanden."
@@ -62,8 +67,8 @@ def parse_mensa_data(mensa_data):
         for day_of_week in day_of_week_array:
             day_of_week_code = day_of_week.get("day-of-week-code")
             # Skip entries for other days
-            #if day_of_week_code != current_day_of_week:
-             #   continue
+            if day_of_week_code != current_day_of_week:
+                continue
             
             opening_hour_array = day_of_week.get("opening-hour-array", [])
 
@@ -83,18 +88,21 @@ def parse_mensa_data(mensa_data):
 
                         if line_name.lower() not in {"home", "garden", "street", "vegan"}:
                             continue
-
+                        
+                        line_name_meal = line.get("meal", {}).get("name")
                         line_description = line.get("meal", {}).get("description")
                         price_info = line.get("meal", {}).get("meal-price-array", [])
-
+                        if (line_name_meal == None or line_description == None or price_info == None):
+                            continue
                         result += (f"*{line_name}*\n")
+                        result += (f"*{line_name_meal}*\n")
                         result += (f"{line_description}\n")
 
                         for price in price_info:
                             customer_group_desc = price.get("customer-group-desc-short")
                             price_value = price.get("price")
-                            result += (f"- *Price for {customer_group_desc}: * {price_value}\n")
+                            result += (f"- *Price for {customer_group_desc}:* {price_value}\n")
 
-    print (result)
+    #print (result)
 
     return result if result != "" else "Keine Daten vorhanden."
