@@ -68,7 +68,5 @@ def get_uni_msg(upperLower, menu_vegi, menu_meet):
             except Exception as e:
                 print(f"An error occurred: {e}")
                 uni_msg += "Diese Daten sind leider nicht vorhanden.\n"
-        else:
-            uni_msg += "Diese Daten sind leider nicht vorhanden.\n"
 
     return uni_msg

@@ -135,15 +135,21 @@ if __name__ == "__main__":
                 ]}            ]
         }
     }
-
-
     response1 = send_msg_welcome()
     time.sleep(3)
-    response2 = send_msg_polymensa()
+    response2 = None
+    response3 = None
+    response4 = None
+
+    if (poly_msg != ""):
+        response2 = send_msg_polymensa()
+
     time.sleep(3)
-    response3 = send_msg_upperunimensa()
+    if (uni_msg != ""):
+        response3 = send_msg_upperunimensa()
     time.sleep(3)
-    response4 = send_msg_lowerunimensa()
+    if (uni_msg_lower != ""):
+        response4 = send_msg_lowerunimensa()
 
     print(f"Whatsapp API status: {response1.status_code}" + ("" if response1.status_code == 200 else f" - {response1.content}"))
     print(f"Whatsapp API status: {response2.status_code}" + ("" if response2.status_code == 200 else f" - {response2.content}"))
