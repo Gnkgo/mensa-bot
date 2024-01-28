@@ -2,12 +2,13 @@
 import requests
 import json
 import configparser
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 import locale
 from poly import fetch_mensa_data, parse_mensa_data
 from uni import get_uni_msg
 import os
 import time
+
 
 
 # Set the language for later use of the weekday
@@ -40,7 +41,19 @@ def send_msg_lowerunimensa():
 
 
 if __name__ == "__main__":
-    api_url = "https://idapps.ethz.ch/cookpit-pub-services/v1/weeklyrotas?client-id=ethz-wcms&lang=en&rs-first=0&rs-size=50&valid-after=2024-01-01"
+    # get the last monday and the next sunday
+    today = date.today()
+    last_monday = today - timedelta(days=today.weekday())
+    next_sunday = (last_monday + timedelta(days=6)).strftime("%Y-%m-%d")
+    last_monday = last_monday.strftime("%Y-%m-%d")
+    polymensa = 9
+
+    print(f"Last Monday: {last_monday}")
+    print(f"Next Sunday: {next_sunday}")
+
+    # Correctly formatted URL using an f-string
+    api_url = f"https://idapps.ethz.ch/cookpit-pub-services/v1/weeklyrotas/?client-id=ethz-wcms&lang=en&rs-first=0&rs-size=50&valid-after={last_monday}&valid-before={next_sunday}&facility={polymensa}"
+    #print(api_url)
     mensa_data = fetch_mensa_data(api_url)
 
     # create BODY of MSG

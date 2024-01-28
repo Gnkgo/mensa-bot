@@ -1,0 +1,2742 @@
+{
+    "weekly-rota-array": [
+        {
+            "weekly-rota-id": 442,
+            "facility-id": 9,
+            "valid-from": "2024-01-29",
+            "valid-to": "2024-02-04",
+            "day-of-week-array": [
+                {
+                    "day-of-week-code": 1,
+                    "day-of-week-desc": "Monday",
+                    "day-of-week-desc-short": "Mon",
+                    "opening-hour-array": [
+                        {
+                            "time-from": "11:15",
+                            "time-to": "19:30",
+                            "meal-time-array": [
+                                {
+                                    "name": "Lunch",
+                                    "time-from": "11:15",
+                                    "time-to": "13:30",
+                                    "line-array": [
+                                        {
+                                            "name": "STREET",
+                                            "meal": {
+                                                "line-id": 11148,
+                                                "name": "GYROS IN TOWN",
+                                                "description": "Pork gyros | tzaziki sauce | flatbread | cabbage | cucumber | red onions | French fries",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 12.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 14.5,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 18.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 11,
+                                                        "position": 11,
+                                                        "desc-short": "Meat",
+                                                        "desc": "Meat"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 16,
+                                                        "position": 16,
+                                                        "desc-short": "7",
+                                                        "desc": "milk, lactose"
+                                                    }
+                                                ],
+                                                "meat-type-array": [
+                                                    {
+                                                        "code": 12,
+                                                        "position": 12,
+                                                        "desc-short": "porc",
+                                                        "desc": "porc",
+                                                        "origin-array": [
+                                                            {
+                                                                "code": 143,
+                                                                "position": 1,
+                                                                "desc-short": "CHE",
+                                                                "desc": "Switzerland"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "GARDEN",
+                                            "meal": {
+                                                "line-id": 11149,
+                                                "name": "MACCARONI PANNA E SPINACI",
+                                                "description": "Cream sauce | Brunoise vegetables | spinach | fried onions | grated cheese | seasonal salad",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 6.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 9.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 14.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 17,
+                                                        "position": 17,
+                                                        "desc-short": "Vegetarian",
+                                                        "desc": "Vegetarian"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 12,
+                                                        "position": 12,
+                                                        "desc-short": "3",
+                                                        "desc": "eggs"
+                                                    },
+                                                    {
+                                                        "code": 16,
+                                                        "position": 16,
+                                                        "desc-short": "7",
+                                                        "desc": "milk, lactose"
+                                                    },
+                                                    {
+                                                        "code": 18,
+                                                        "position": 18,
+                                                        "desc-short": "9",
+                                                        "desc": "celery"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "HOME",
+                                            "meal": {
+                                                "line-id": 11150,
+                                                "name": "PEKING SOUP",
+                                                "description": "Chicken | glass noodles | carrots | mu err | tomatoes | coriander",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 7.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 10.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 15.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 11,
+                                                        "position": 11,
+                                                        "desc-short": "Meat",
+                                                        "desc": "Meat"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 12,
+                                                        "position": 12,
+                                                        "desc-short": "3",
+                                                        "desc": "eggs"
+                                                    },
+                                                    {
+                                                        "code": 15,
+                                                        "position": 15,
+                                                        "desc-short": "6",
+                                                        "desc": "soya"
+                                                    },
+                                                    {
+                                                        "code": 18,
+                                                        "position": 18,
+                                                        "desc-short": "9",
+                                                        "desc": "celery"
+                                                    },
+                                                    {
+                                                        "code": 20,
+                                                        "position": 20,
+                                                        "desc-short": "11",
+                                                        "desc": "sesame"
+                                                    }
+                                                ],
+                                                "meat-type-array": [
+                                                    {
+                                                        "code": 15,
+                                                        "position": 15,
+                                                        "desc-short": "chicken",
+                                                        "desc": "chicken",
+                                                        "origin-array": [
+                                                            {
+                                                                "code": 143,
+                                                                "position": 1,
+                                                                "desc-short": "CHE",
+                                                                "desc": "Switzerland"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "VEGAN",
+                                            "meal": {
+                                                "line-id": 11151,
+                                                "name": "COCONUT CURRY",
+                                                "description": "Sweet potatoes | carrots | Chinese cabbage | lettuce | limes | coriander | bean sprouts | jasmine rice",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 6.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 9.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 14.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 16,
+                                                        "position": 16,
+                                                        "desc-short": "Vegan",
+                                                        "desc": "Vegan"
+                                                    },
+                                                    {
+                                                        "code": 17,
+                                                        "position": 17,
+                                                        "desc-short": "Vegetarian",
+                                                        "desc": "Vegetarian"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 15,
+                                                        "position": 15,
+                                                        "desc-short": "6",
+                                                        "desc": "soya"
+                                                    },
+                                                    {
+                                                        "code": 18,
+                                                        "position": 18,
+                                                        "desc-short": "9",
+                                                        "desc": "celery"
+                                                    },
+                                                    {
+                                                        "code": 19,
+                                                        "position": 19,
+                                                        "desc-short": "10",
+                                                        "desc": "mustard"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "Hot & Cold Buffet",
+                                            "meal": {
+                                                "line-id": 11152,
+                                                "name": "Hot & Cold Buffet",
+                                                "description": "Rich salad buffet and additional warm components - healthy and delicious!\n",
+                                                "price-unit-code": 11,
+                                                "price-unit-desc": "100 g",
+                                                "price-unit-desc-short": "100 g",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 2.0,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 2.2,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 3.2,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Dinner",
+                                    "time-from": "17:30",
+                                    "time-to": "19:30",
+                                    "line-array": [
+                                        {
+                                            "name": "HOME ABEND",
+                                            "meal": {
+                                                "line-id": 11153,
+                                                "name": "PORK CHEESY PATTY",
+                                                "description": "BBQ sauce | Hasselback potatoes | green beans | caraway seeds",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 7.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 10.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 15.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 11,
+                                                        "position": 11,
+                                                        "desc-short": "Meat",
+                                                        "desc": "Meat"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 16,
+                                                        "position": 16,
+                                                        "desc-short": "7",
+                                                        "desc": "milk, lactose"
+                                                    },
+                                                    {
+                                                        "code": 19,
+                                                        "position": 19,
+                                                        "desc-short": "10",
+                                                        "desc": "mustard"
+                                                    }
+                                                ],
+                                                "meat-type-array": [
+                                                    {
+                                                        "code": 12,
+                                                        "position": 12,
+                                                        "desc-short": "porc",
+                                                        "desc": "porc",
+                                                        "origin-array": [
+                                                            {
+                                                                "code": 143,
+                                                                "position": 1,
+                                                                "desc-short": "CHE",
+                                                                "desc": "Switzerland"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "GARDEN ABEND",
+                                            "meal": {
+                                                "line-id": 11154,
+                                                "name": "QUINOA CHILI PATTY",
+                                                "description": "BBQ sauce | oven potatoes | green beans | caraway seeds",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 6.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 9.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 14.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 17,
+                                                        "position": 17,
+                                                        "desc-short": "Vegetarian",
+                                                        "desc": "Vegetarian"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 12,
+                                                        "position": 12,
+                                                        "desc-short": "3",
+                                                        "desc": "eggs"
+                                                    },
+                                                    {
+                                                        "code": 16,
+                                                        "position": 16,
+                                                        "desc-short": "7",
+                                                        "desc": "milk, lactose"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "STREET ABEND",
+                                            "meal": {
+                                                "line-id": 11155,
+                                                "name": "CHICKEN KEBAB INDIA STYLE",
+                                                "description": "Lentil curry | eggplants | basmati rice | papadam",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 11.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 13.5,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 17.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 11,
+                                                        "position": 11,
+                                                        "desc-short": "Meat",
+                                                        "desc": "Meat"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 18,
+                                                        "position": 18,
+                                                        "desc-short": "9",
+                                                        "desc": "celery"
+                                                    },
+                                                    {
+                                                        "code": 20,
+                                                        "position": 20,
+                                                        "desc-short": "11",
+                                                        "desc": "sesame"
+                                                    }
+                                                ],
+                                                "meat-type-array": [
+                                                    {
+                                                        "code": 15,
+                                                        "position": 15,
+                                                        "desc-short": "chicken",
+                                                        "desc": "chicken",
+                                                        "origin-array": [
+                                                            {
+                                                                "code": 143,
+                                                                "position": 1,
+                                                                "desc-short": "CHE",
+                                                                "desc": "Switzerland"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "day-of-week-code": 2,
+                    "day-of-week-desc": "Tuesday",
+                    "day-of-week-desc-short": "Tue",
+                    "opening-hour-array": [
+                        {
+                            "time-from": "11:15",
+                            "time-to": "19:30",
+                            "meal-time-array": [
+                                {
+                                    "name": "Lunch",
+                                    "time-from": "11:15",
+                                    "time-to": "13:30",
+                                    "line-array": [
+                                        {
+                                            "name": "STREET",
+                                            "meal": {
+                                                "line-id": 11156,
+                                                "name": "CHICKEN KEBAB INDIA STYLE",
+                                                "description": "Lentil curry | eggplants | basmati rice | papadam",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 11.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 13.5,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 17.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 11,
+                                                        "position": 11,
+                                                        "desc-short": "Meat",
+                                                        "desc": "Meat"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 18,
+                                                        "position": 18,
+                                                        "desc-short": "9",
+                                                        "desc": "celery"
+                                                    },
+                                                    {
+                                                        "code": 20,
+                                                        "position": 20,
+                                                        "desc-short": "11",
+                                                        "desc": "sesame"
+                                                    }
+                                                ],
+                                                "meat-type-array": [
+                                                    {
+                                                        "code": 15,
+                                                        "position": 15,
+                                                        "desc-short": "chicken",
+                                                        "desc": "chicken",
+                                                        "origin-array": [
+                                                            {
+                                                                "code": 143,
+                                                                "position": 1,
+                                                                "desc-short": "CHE",
+                                                                "desc": "Switzerland"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "GARDEN",
+                                            "meal": {
+                                                "line-id": 11157,
+                                                "name": "SPÄTZLI PAN",
+                                                "description": "Bechamel | cheese | fried onions | salad",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 6.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 9.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 14.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 17,
+                                                        "position": 17,
+                                                        "desc-short": "Vegetarian",
+                                                        "desc": "Vegetarian"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 12,
+                                                        "position": 12,
+                                                        "desc-short": "3",
+                                                        "desc": "eggs"
+                                                    },
+                                                    {
+                                                        "code": 16,
+                                                        "position": 16,
+                                                        "desc-short": "7",
+                                                        "desc": "milk, lactose"
+                                                    },
+                                                    {
+                                                        "code": 18,
+                                                        "position": 18,
+                                                        "desc-short": "9",
+                                                        "desc": "celery"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "HOME",
+                                            "meal": {
+                                                "line-id": 11158,
+                                                "name": "BEEF MEATLOAF",
+                                                "description": "Mustard sauce | Zöpfli | Peas | Onion crunch",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 7.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 10.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 15.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 11,
+                                                        "position": 11,
+                                                        "desc-short": "Meat",
+                                                        "desc": "Meat"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 12,
+                                                        "position": 12,
+                                                        "desc-short": "3",
+                                                        "desc": "eggs"
+                                                    },
+                                                    {
+                                                        "code": 19,
+                                                        "position": 19,
+                                                        "desc-short": "10",
+                                                        "desc": "mustard"
+                                                    },
+                                                    {
+                                                        "code": 21,
+                                                        "position": 21,
+                                                        "desc-short": "12",
+                                                        "desc": "Sulfites"
+                                                    }
+                                                ],
+                                                "meat-type-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "beef",
+                                                        "desc": "beef",
+                                                        "origin-array": [
+                                                            {
+                                                                "code": 143,
+                                                                "position": 1,
+                                                                "desc-short": "CHE",
+                                                                "desc": "Switzerland"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "VEGAN",
+                                            "meal": {
+                                                "line-id": 11159,
+                                                "name": "COLORS OF THE GARDEN",
+                                                "description": "Veggie fajitas | plant-based chunks | carrots | peppers | cabbage | salsa | pink couscous | green salad",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 10.9,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 14.3,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 18.9,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 16,
+                                                        "position": 16,
+                                                        "desc-short": "Vegan",
+                                                        "desc": "Vegan"
+                                                    },
+                                                    {
+                                                        "code": 17,
+                                                        "position": 17,
+                                                        "desc-short": "Vegetarian",
+                                                        "desc": "Vegetarian"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 18,
+                                                        "position": 18,
+                                                        "desc-short": "9",
+                                                        "desc": "celery"
+                                                    },
+                                                    {
+                                                        "code": 19,
+                                                        "position": 19,
+                                                        "desc-short": "10",
+                                                        "desc": "mustard"
+                                                    },
+                                                    {
+                                                        "code": 20,
+                                                        "position": 20,
+                                                        "desc-short": "11",
+                                                        "desc": "sesame"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "Hot & Cold Buffet",
+                                            "meal": {
+                                                "line-id": 11160,
+                                                "name": "Hot & Cold Buffet",
+                                                "description": "Rich salad buffet and additional warm components - healthy and delicious!\n",
+                                                "price-unit-code": 11,
+                                                "price-unit-desc": "100 g",
+                                                "price-unit-desc-short": "100 g",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 2.0,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 2.2,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 3.2,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Dinner",
+                                    "time-from": "17:30",
+                                    "time-to": "19:30",
+                                    "line-array": [
+                                        {
+                                            "name": "HOME ABEND",
+                                            "meal": {
+                                                "line-id": 11161,
+                                                "name": "CASARECCE CON POLLO E FUNGHI",
+                                                "description": "Pasta | chicken | mushrooms | cream sauce | dill | grated cheese | seasonal salad",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 7.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 10.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 15.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 11,
+                                                        "position": 11,
+                                                        "desc-short": "Meat",
+                                                        "desc": "Meat"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 16,
+                                                        "position": 16,
+                                                        "desc-short": "7",
+                                                        "desc": "milk, lactose"
+                                                    }
+                                                ],
+                                                "meat-type-array": [
+                                                    {
+                                                        "code": 15,
+                                                        "position": 15,
+                                                        "desc-short": "chicken",
+                                                        "desc": "chicken",
+                                                        "origin-array": [
+                                                            {
+                                                                "code": 143,
+                                                                "position": 1,
+                                                                "desc-short": "CHE",
+                                                                "desc": "Switzerland"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "GARDEN ABEND",
+                                            "meal": {
+                                                "line-id": 11162,
+                                                "name": "CASARECCE AL FUNGHI",
+                                                "description": "Pasta | wild mushrooms | cream sauce | dill | grated cheese | seasonal salad",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 6.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 9.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 14.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 17,
+                                                        "position": 17,
+                                                        "desc-short": "Vegetarian",
+                                                        "desc": "Vegetarian"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 16,
+                                                        "position": 16,
+                                                        "desc-short": "7",
+                                                        "desc": "milk, lactose"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "STREET ABEND",
+                                            "meal": {
+                                                "line-id": 11163,
+                                                "name": "KEBAB ROYAL PLATTER",
+                                                "description": "Kebab meat | kebab sauce | flatbread | cabbage | gherkins | red onions | French fries",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 11.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 13.5,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 17.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 11,
+                                                        "position": 11,
+                                                        "desc-short": "Meat",
+                                                        "desc": "Meat"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 12,
+                                                        "position": 12,
+                                                        "desc-short": "3",
+                                                        "desc": "eggs"
+                                                    },
+                                                    {
+                                                        "code": 16,
+                                                        "position": 16,
+                                                        "desc-short": "7",
+                                                        "desc": "milk, lactose"
+                                                    },
+                                                    {
+                                                        "code": 19,
+                                                        "position": 19,
+                                                        "desc-short": "10",
+                                                        "desc": "mustard"
+                                                    }
+                                                ],
+                                                "meat-type-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "beef",
+                                                        "desc": "beef",
+                                                        "origin-array": [
+                                                            {
+                                                                "code": 143,
+                                                                "position": 1,
+                                                                "desc-short": "CHE",
+                                                                "desc": "Switzerland"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "code": 11,
+                                                        "position": 11,
+                                                        "desc-short": "veal",
+                                                        "desc": "veal",
+                                                        "origin-array": [
+                                                            {
+                                                                "code": 143,
+                                                                "position": 1,
+                                                                "desc-short": "CHE",
+                                                                "desc": "Switzerland"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "code": 15,
+                                                        "position": 15,
+                                                        "desc-short": "chicken",
+                                                        "desc": "chicken",
+                                                        "origin-array": [
+                                                            {
+                                                                "code": 143,
+                                                                "position": 1,
+                                                                "desc-short": "CHE",
+                                                                "desc": "Switzerland"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "day-of-week-code": 3,
+                    "day-of-week-desc": "Wednesday",
+                    "day-of-week-desc-short": "Wed",
+                    "opening-hour-array": [
+                        {
+                            "time-from": "11:15",
+                            "time-to": "19:30",
+                            "meal-time-array": [
+                                {
+                                    "name": "Lunch",
+                                    "time-from": "11:15",
+                                    "time-to": "13:30",
+                                    "line-array": [
+                                        {
+                                            "name": "STREET",
+                                            "meal": {
+                                                "line-id": 11164,
+                                                "name": "THE POSTMAN BURGER",
+                                                "description": "Swiss beef | sesambun | Gruyere cheese | gherkin | onions | ketchup | mustard | French fries",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 12.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 14.5,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 18.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 11,
+                                                        "position": 11,
+                                                        "desc-short": "Meat",
+                                                        "desc": "Meat"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 16,
+                                                        "position": 16,
+                                                        "desc-short": "7",
+                                                        "desc": "milk, lactose"
+                                                    },
+                                                    {
+                                                        "code": 18,
+                                                        "position": 18,
+                                                        "desc-short": "9",
+                                                        "desc": "celery"
+                                                    },
+                                                    {
+                                                        "code": 19,
+                                                        "position": 19,
+                                                        "desc-short": "10",
+                                                        "desc": "mustard"
+                                                    },
+                                                    {
+                                                        "code": 20,
+                                                        "position": 20,
+                                                        "desc-short": "11",
+                                                        "desc": "sesame"
+                                                    },
+                                                    {
+                                                        "code": 21,
+                                                        "position": 21,
+                                                        "desc-short": "12",
+                                                        "desc": "Sulfites"
+                                                    }
+                                                ],
+                                                "meat-type-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "beef",
+                                                        "desc": "beef",
+                                                        "origin-array": [
+                                                            {
+                                                                "code": 143,
+                                                                "position": 1,
+                                                                "desc-short": "CHE",
+                                                                "desc": "Switzerland"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "GARDEN",
+                                            "meal": {
+                                                "line-id": 11165,
+                                                "name": "FALAFEL BOWL",
+                                                "description": "Tzatziki sauce | bulgour pilaf | courgette | ras el hanout | fennel | zatar",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 6.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 9.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 14.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 17,
+                                                        "position": 17,
+                                                        "desc-short": "Vegetarian",
+                                                        "desc": "Vegetarian"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 16,
+                                                        "position": 16,
+                                                        "desc-short": "7",
+                                                        "desc": "milk, lactose"
+                                                    },
+                                                    {
+                                                        "code": 20,
+                                                        "position": 20,
+                                                        "desc-short": "11",
+                                                        "desc": "sesame"
+                                                    },
+                                                    {
+                                                        "code": 21,
+                                                        "position": 21,
+                                                        "desc-short": "12",
+                                                        "desc": "Sulfites"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "HOME",
+                                            "meal": {
+                                                "line-id": 11166,
+                                                "name": "CHICKEN THIGH HOT & SMOKY",
+                                                "description": "BBQ whiskey dip | Western rice salad",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 7.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 10.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 15.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 11,
+                                                        "position": 11,
+                                                        "desc-short": "Meat",
+                                                        "desc": "Meat"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 12,
+                                                        "position": 12,
+                                                        "desc-short": "3",
+                                                        "desc": "eggs"
+                                                    },
+                                                    {
+                                                        "code": 19,
+                                                        "position": 19,
+                                                        "desc-short": "10",
+                                                        "desc": "mustard"
+                                                    }
+                                                ],
+                                                "meat-type-array": [
+                                                    {
+                                                        "code": 15,
+                                                        "position": 15,
+                                                        "desc-short": "chicken",
+                                                        "desc": "chicken",
+                                                        "origin-array": [
+                                                            {
+                                                                "code": 143,
+                                                                "position": 1,
+                                                                "desc-short": "CHE",
+                                                                "desc": "Switzerland"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "VEGAN",
+                                            "meal": {
+                                                "line-id": 11167,
+                                                "name": "ZUCCHINI CARBONARA",
+                                                "description": "Fusilli Integrale | zucchini | cream sauce | vegan grated cheese | smoked tofu",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 6.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 9.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 14.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 16,
+                                                        "position": 16,
+                                                        "desc-short": "Vegan",
+                                                        "desc": "Vegan"
+                                                    },
+                                                    {
+                                                        "code": 17,
+                                                        "position": 17,
+                                                        "desc-short": "Vegetarian",
+                                                        "desc": "Vegetarian"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 15,
+                                                        "position": 15,
+                                                        "desc-short": "6",
+                                                        "desc": "soya"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "Hot & Cold Buffet",
+                                            "meal": {
+                                                "line-id": 11168,
+                                                "name": "Hot & Cold Buffet",
+                                                "description": "Rich salad buffet and additional warm components - healthy and delicious!\n",
+                                                "price-unit-code": 11,
+                                                "price-unit-desc": "100 g",
+                                                "price-unit-desc-short": "100 g",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 2.0,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 2.2,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 3.2,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Dinner",
+                                    "time-from": "17:30",
+                                    "time-to": "19:30",
+                                    "line-array": [
+                                        {
+                                            "name": "HOME ABEND",
+                                            "meal": {
+                                                "line-id": 11169,
+                                                "name": "ST.GALLER SCHÜBLIG",
+                                                "description": "Mustard | Potato salad | Red cabbage",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 7.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 10.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 15.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 11,
+                                                        "position": 11,
+                                                        "desc-short": "Meat",
+                                                        "desc": "Meat"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 18,
+                                                        "position": 18,
+                                                        "desc-short": "9",
+                                                        "desc": "celery"
+                                                    },
+                                                    {
+                                                        "code": 19,
+                                                        "position": 19,
+                                                        "desc-short": "10",
+                                                        "desc": "mustard"
+                                                    },
+                                                    {
+                                                        "code": 21,
+                                                        "position": 21,
+                                                        "desc-short": "12",
+                                                        "desc": "Sulfites"
+                                                    }
+                                                ],
+                                                "meat-type-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "beef",
+                                                        "desc": "beef",
+                                                        "origin-array": [
+                                                            {
+                                                                "code": 143,
+                                                                "position": 1,
+                                                                "desc-short": "CHE",
+                                                                "desc": "Switzerland"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "code": 12,
+                                                        "position": 12,
+                                                        "desc-short": "porc",
+                                                        "desc": "porc",
+                                                        "origin-array": [
+                                                            {
+                                                                "code": 143,
+                                                                "position": 1,
+                                                                "desc-short": "CHE",
+                                                                "desc": "Switzerland"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "GARDEN ABEND",
+                                            "meal": {
+                                                "line-id": 11170,
+                                                "name": "VEGAN WIENERLI",
+                                                "description": "Mustard | Potato salad | Red cabbage",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 6.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 9.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 14.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 16,
+                                                        "position": 16,
+                                                        "desc-short": "Vegan",
+                                                        "desc": "Vegan"
+                                                    },
+                                                    {
+                                                        "code": 17,
+                                                        "position": 17,
+                                                        "desc-short": "Vegetarian",
+                                                        "desc": "Vegetarian"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 19,
+                                                        "position": 19,
+                                                        "desc-short": "10",
+                                                        "desc": "mustard"
+                                                    },
+                                                    {
+                                                        "code": 21,
+                                                        "position": 21,
+                                                        "desc-short": "12",
+                                                        "desc": "Sulfites"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "STREET ABEND",
+                                            "meal": {
+                                                "line-id": 11171,
+                                                "name": "PLUCK IT WITH HÖRNLI",
+                                                "description": "Pulled pork | pasta | apple sauce | leaf salad",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 8.9,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 10.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 14.9,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 11,
+                                                        "position": 11,
+                                                        "desc-short": "Meat",
+                                                        "desc": "Meat"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 12,
+                                                        "position": 12,
+                                                        "desc-short": "3",
+                                                        "desc": "eggs"
+                                                    },
+                                                    {
+                                                        "code": 18,
+                                                        "position": 18,
+                                                        "desc-short": "9",
+                                                        "desc": "celery"
+                                                    }
+                                                ],
+                                                "meat-type-array": [
+                                                    {
+                                                        "code": 12,
+                                                        "position": 12,
+                                                        "desc-short": "porc",
+                                                        "desc": "porc",
+                                                        "origin-array": [
+                                                            {
+                                                                "code": 143,
+                                                                "position": 1,
+                                                                "desc-short": "CHE",
+                                                                "desc": "Switzerland"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "day-of-week-code": 4,
+                    "day-of-week-desc": "Thursday",
+                    "day-of-week-desc-short": "Thu",
+                    "opening-hour-array": [
+                        {
+                            "time-from": "11:15",
+                            "time-to": "19:30",
+                            "meal-time-array": [
+                                {
+                                    "name": "Lunch",
+                                    "time-from": "11:15",
+                                    "time-to": "13:30",
+                                    "line-array": [
+                                        {
+                                            "name": "STREET",
+                                            "meal": {
+                                                "line-id": 11172,
+                                                "name": "RICOTTA SPINACH LASAGNA",
+                                                "description": "Fried egg | tomato pesto | rocket salad",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 9.9,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 11.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 15.9,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 17,
+                                                        "position": 17,
+                                                        "desc-short": "Vegetarian",
+                                                        "desc": "Vegetarian"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 12,
+                                                        "position": 12,
+                                                        "desc-short": "3",
+                                                        "desc": "eggs"
+                                                    },
+                                                    {
+                                                        "code": 16,
+                                                        "position": 16,
+                                                        "desc-short": "7",
+                                                        "desc": "milk, lactose"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "GARDEN",
+                                            "meal": {
+                                                "line-id": 11173,
+                                                "name": "QUORN SCHNITZEL ZURICH STYLE",
+                                                "description": "Cream sauce | mushrooms | baked potatoes | winter vegetables",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 6.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 9.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 14.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 17,
+                                                        "position": 17,
+                                                        "desc-short": "Vegetarian",
+                                                        "desc": "Vegetarian"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 12,
+                                                        "position": 12,
+                                                        "desc-short": "3",
+                                                        "desc": "eggs"
+                                                    },
+                                                    {
+                                                        "code": 16,
+                                                        "position": 16,
+                                                        "desc-short": "7",
+                                                        "desc": "milk, lactose"
+                                                    },
+                                                    {
+                                                        "code": 18,
+                                                        "position": 18,
+                                                        "desc-short": "9",
+                                                        "desc": "celery"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "HOME",
+                                            "meal": {
+                                                "line-id": 11174,
+                                                "name": "TESSINERFEST",
+                                                "description": "Pork sausage | tomato sauce | basil gnocchi | broccoli | chili\nbasil gnocchi | broccoli | chili",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 7.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 10.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 15.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 11,
+                                                        "position": 11,
+                                                        "desc-short": "Meat",
+                                                        "desc": "Meat"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 16,
+                                                        "position": 16,
+                                                        "desc-short": "7",
+                                                        "desc": "milk, lactose"
+                                                    }
+                                                ],
+                                                "meat-type-array": [
+                                                    {
+                                                        "code": 12,
+                                                        "position": 12,
+                                                        "desc-short": "porc",
+                                                        "desc": "porc",
+                                                        "origin-array": [
+                                                            {
+                                                                "code": 143,
+                                                                "position": 1,
+                                                                "desc-short": "CHE",
+                                                                "desc": "Switzerland"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "VEGAN",
+                                            "meal": {
+                                                "line-id": 11175,
+                                                "name": "VIETNAMESE SPRING ROLL",
+                                                "description": "Hoisin sauce | jasmine rice | wok vegetables | pak choi | black sesame seeds",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 7.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 10.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 15.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 16,
+                                                        "position": 16,
+                                                        "desc-short": "Vegan",
+                                                        "desc": "Vegan"
+                                                    },
+                                                    {
+                                                        "code": 17,
+                                                        "position": 17,
+                                                        "desc-short": "Vegetarian",
+                                                        "desc": "Vegetarian"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 15,
+                                                        "position": 15,
+                                                        "desc-short": "6",
+                                                        "desc": "soya"
+                                                    },
+                                                    {
+                                                        "code": 18,
+                                                        "position": 18,
+                                                        "desc-short": "9",
+                                                        "desc": "celery"
+                                                    },
+                                                    {
+                                                        "code": 20,
+                                                        "position": 20,
+                                                        "desc-short": "11",
+                                                        "desc": "sesame"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "Hot & Cold Buffet",
+                                            "meal": {
+                                                "line-id": 11176,
+                                                "name": "Hot & Cold Buffet",
+                                                "description": "Rich salad buffet and additional warm components - healthy and delicious!\n",
+                                                "price-unit-code": 11,
+                                                "price-unit-desc": "100 g",
+                                                "price-unit-desc-short": "100 g",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 2.0,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 2.2,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 3.2,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Dinner",
+                                    "time-from": "17:30",
+                                    "time-to": "19:30",
+                                    "line-array": [
+                                        {
+                                            "name": "HOME ABEND",
+                                            "meal": {
+                                                "line-id": 11177,
+                                                "name": "BAMI GORENG",
+                                                "description": "Indonesian noodle dish | turkey | Asian vegetables | sprouts | curry | soy",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 7.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 10.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 15.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 11,
+                                                        "position": 11,
+                                                        "desc-short": "Meat",
+                                                        "desc": "Meat"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 12,
+                                                        "position": 12,
+                                                        "desc-short": "3",
+                                                        "desc": "eggs"
+                                                    },
+                                                    {
+                                                        "code": 15,
+                                                        "position": 15,
+                                                        "desc-short": "6",
+                                                        "desc": "soya"
+                                                    },
+                                                    {
+                                                        "code": 18,
+                                                        "position": 18,
+                                                        "desc-short": "9",
+                                                        "desc": "celery"
+                                                    },
+                                                    {
+                                                        "code": 20,
+                                                        "position": 20,
+                                                        "desc-short": "11",
+                                                        "desc": "sesame"
+                                                    }
+                                                ],
+                                                "meat-type-array": [
+                                                    {
+                                                        "code": 16,
+                                                        "position": 16,
+                                                        "desc-short": "turkey",
+                                                        "desc": "turkey",
+                                                        "origin-array": [
+                                                            {
+                                                                "code": 280,
+                                                                "position": 280,
+                                                                "desc-short": "POL",
+                                                                "desc": "Poland"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "GARDEN ABEND",
+                                            "meal": {
+                                                "line-id": 11178,
+                                                "name": "BAMI GORENG",
+                                                "description": "Indonesian noodle dish | smoked tofu | Asian vegetables | sprouts | curry | soy",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 6.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 9.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 14.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 17,
+                                                        "position": 17,
+                                                        "desc-short": "Vegetarian",
+                                                        "desc": "Vegetarian"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 12,
+                                                        "position": 12,
+                                                        "desc-short": "3",
+                                                        "desc": "eggs"
+                                                    },
+                                                    {
+                                                        "code": 15,
+                                                        "position": 15,
+                                                        "desc-short": "6",
+                                                        "desc": "soya"
+                                                    },
+                                                    {
+                                                        "code": 18,
+                                                        "position": 18,
+                                                        "desc-short": "9",
+                                                        "desc": "celery"
+                                                    },
+                                                    {
+                                                        "code": 20,
+                                                        "position": 20,
+                                                        "desc-short": "11",
+                                                        "desc": "sesame"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "STREET ABEND",
+                                            "meal": {
+                                                "line-id": 11179,
+                                                "name": "CHICKEN THIGH HOT & SMOKY",
+                                                "description": "BBQ | French fries | Coleslaw | Onion ring",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 9.9,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 11.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 15.9,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 11,
+                                                        "position": 11,
+                                                        "desc-short": "Meat",
+                                                        "desc": "Meat"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 16,
+                                                        "position": 16,
+                                                        "desc-short": "7",
+                                                        "desc": "milk, lactose"
+                                                    },
+                                                    {
+                                                        "code": 21,
+                                                        "position": 21,
+                                                        "desc-short": "12",
+                                                        "desc": "Sulfites"
+                                                    }
+                                                ],
+                                                "meat-type-array": [
+                                                    {
+                                                        "code": 15,
+                                                        "position": 15,
+                                                        "desc-short": "chicken",
+                                                        "desc": "chicken",
+                                                        "origin-array": [
+                                                            {
+                                                                "code": 143,
+                                                                "position": 1,
+                                                                "desc-short": "CHE",
+                                                                "desc": "Switzerland"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "day-of-week-code": 5,
+                    "day-of-week-desc": "Friday",
+                    "day-of-week-desc-short": "Fri",
+                    "opening-hour-array": [
+                        {
+                            "time-from": "11:15",
+                            "time-to": "19:30",
+                            "meal-time-array": [
+                                {
+                                    "name": "Lunch",
+                                    "time-from": "11:15",
+                                    "time-to": "13:30",
+                                    "line-array": [
+                                        {
+                                            "name": "STREET",
+                                            "meal": {
+                                                "line-id": 11180,
+                                                "name": "BREADED PORK SCHNITZEL VIENNESE STYLE",
+                                                "description": "Potato salad | chives | lemon wedges | cranberries",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 12.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 14.5,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 18.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 11,
+                                                        "position": 11,
+                                                        "desc-short": "Meat",
+                                                        "desc": "Meat"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 12,
+                                                        "position": 12,
+                                                        "desc-short": "3",
+                                                        "desc": "eggs"
+                                                    },
+                                                    {
+                                                        "code": 18,
+                                                        "position": 18,
+                                                        "desc-short": "9",
+                                                        "desc": "celery"
+                                                    },
+                                                    {
+                                                        "code": 19,
+                                                        "position": 19,
+                                                        "desc-short": "10",
+                                                        "desc": "mustard"
+                                                    },
+                                                    {
+                                                        "code": 21,
+                                                        "position": 21,
+                                                        "desc-short": "12",
+                                                        "desc": "Sulfites"
+                                                    }
+                                                ],
+                                                "meat-type-array": [
+                                                    {
+                                                        "code": 12,
+                                                        "position": 12,
+                                                        "desc-short": "porc",
+                                                        "desc": "porc",
+                                                        "origin-array": [
+                                                            {
+                                                                "code": 143,
+                                                                "position": 1,
+                                                                "desc-short": "CHE",
+                                                                "desc": "Switzerland"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "GARDEN",
+                                            "meal": {
+                                                "line-id": 11181,
+                                                "name": "SMOKED CARROTS",
+                                                "description": "Green sauce | Gersotto pilaf | Beluga lentils | Lettuce | Sunflower seeds",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 6.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 9.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 14.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 17,
+                                                        "position": 17,
+                                                        "desc-short": "Vegetarian",
+                                                        "desc": "Vegetarian"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 16,
+                                                        "position": 16,
+                                                        "desc-short": "7",
+                                                        "desc": "milk, lactose"
+                                                    },
+                                                    {
+                                                        "code": 18,
+                                                        "position": 18,
+                                                        "desc-short": "9",
+                                                        "desc": "celery"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "HOME",
+                                            "meal": {
+                                                "line-id": 11182,
+                                                "name": "G' HACKETS WITH HÖRNLI",
+                                                "description": "Grated cheese | apple sauce",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 7.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 10.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 15.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 11,
+                                                        "position": 11,
+                                                        "desc-short": "Meat",
+                                                        "desc": "Meat"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 12,
+                                                        "position": 12,
+                                                        "desc-short": "3",
+                                                        "desc": "eggs"
+                                                    },
+                                                    {
+                                                        "code": 18,
+                                                        "position": 18,
+                                                        "desc-short": "9",
+                                                        "desc": "celery"
+                                                    },
+                                                    {
+                                                        "code": 21,
+                                                        "position": 21,
+                                                        "desc-short": "12",
+                                                        "desc": "Sulfites"
+                                                    }
+                                                ],
+                                                "meat-type-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "beef",
+                                                        "desc": "beef",
+                                                        "origin-array": [
+                                                            {
+                                                                "code": 143,
+                                                                "position": 1,
+                                                                "desc-short": "CHE",
+                                                                "desc": "Switzerland"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "VEGAN",
+                                            "meal": {
+                                                "line-id": 11183,
+                                                "name": "POLPETTE SIN CARNE",
+                                                "description": "Plantbased balls | tomato sauce | gnocchi | basil",
+                                                "price-unit-code": 10,
+                                                "price-unit-desc": "serving",
+                                                "price-unit-desc-short": "serving",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 8.5,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 11.9,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 16.5,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ],
+                                                "meal-class-array": [
+                                                    {
+                                                        "code": 16,
+                                                        "position": 16,
+                                                        "desc-short": "Vegan",
+                                                        "desc": "Vegan"
+                                                    },
+                                                    {
+                                                        "code": 17,
+                                                        "position": 17,
+                                                        "desc-short": "Vegetarian",
+                                                        "desc": "Vegetarian"
+                                                    }
+                                                ],
+                                                "allergen-array": [
+                                                    {
+                                                        "code": 10,
+                                                        "position": 10,
+                                                        "desc-short": "1",
+                                                        "desc": "gluten wheat"
+                                                    },
+                                                    {
+                                                        "code": 15,
+                                                        "position": 15,
+                                                        "desc-short": "6",
+                                                        "desc": "soya"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "Hot & Cold Buffet",
+                                            "meal": {
+                                                "line-id": 11184,
+                                                "name": "Hot & Cold Buffet",
+                                                "description": "Rich salad buffet and additional warm components - healthy and delicious!\n",
+                                                "price-unit-code": 11,
+                                                "price-unit-desc": "100 g",
+                                                "price-unit-desc-short": "100 g",
+                                                "meal-price-array": [
+                                                    {
+                                                        "price": 2.0,
+                                                        "customer-group-code": 10,
+                                                        "customer-group-position": 10,
+                                                        "customer-group-desc": "students",
+                                                        "customer-group-desc-short": "stud."
+                                                    },
+                                                    {
+                                                        "price": 2.2,
+                                                        "customer-group-code": 11,
+                                                        "customer-group-position": 11,
+                                                        "customer-group-desc": "internal",
+                                                        "customer-group-desc-short": "int."
+                                                    },
+                                                    {
+                                                        "price": 3.2,
+                                                        "customer-group-code": 13,
+                                                        "customer-group-position": 13,
+                                                        "customer-group-desc": "external",
+                                                        "customer-group-desc-short": "ext."
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Dinner",
+                                    "time-from": "17:30",
+                                    "time-to": "19:30",
+                                    "line-array": [
+                                        {
+                                            "name": "HOME ABEND"
+                                        },
+                                        {
+                                            "name": "GARDEN ABEND"
+                                        },
+                                        {
+                                            "name": "STREET ABEND"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "day-of-week-code": 6,
+                    "day-of-week-desc": "Saturday",
+                    "day-of-week-desc-short": "Sat"
+                },
+                {
+                    "day-of-week-code": 7,
+                    "day-of-week-desc": "Sunday",
+                    "day-of-week-desc-short": "Sun"
+                }
+            ]
+        }
+    ]
+}
