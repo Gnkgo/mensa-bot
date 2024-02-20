@@ -1,3 +1,7 @@
+import requests
+import json
+from datetime import date, timedelta
+
 def generate_menu_msg(menus):
     msg = ''
     for menu in menus:
@@ -12,3 +16,14 @@ def is_float(string):
         return True
     except ValueError:
         return False
+
+def send_msg(data, url, headers):
+    return requests.post(url, headers=headers, data=json.dumps(data))
+
+def time_range():
+    today = date.today()
+    last_monday = today - timedelta(days=today.weekday())
+    next_sunday = (last_monday + timedelta(days=6)).strftime("%Y-%m-%d")
+    last_monday = last_monday.strftime("%Y-%m-%d")
+    return last_monday, next_sunday
+
