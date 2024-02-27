@@ -1,7 +1,16 @@
-import requests
-from datetime import datetime
+import requests  # for making HTTP requests
+from datetime import datetime  # for getting the current date
 
-def fetch_mensa_data(api_url):
+def fetch_mensa_data(api_url: str) -> dict:
+    """
+    Fetch Mensa data from the API.
+
+    Parameters:
+    - api_url (str): The URL of the API to fetch data from.
+
+    Returns:
+    - dict: The Mensa data in dictionary format.
+    """
     try:
         response = requests.get(api_url)
         response.raise_for_status()
@@ -10,7 +19,16 @@ def fetch_mensa_data(api_url):
         print(f"Error fetching Mensa data: {e}")
         return None
 
-def parse_mensa_data(mensa_data):
+def parse_mensa_data(mensa_data: dict) -> str:
+    """
+    Parse Mensa data to extract menu information.
+
+    Parameters:
+    - mensa_data (dict): The Mensa data to be parsed.
+
+    Returns:
+    - str: The parsed menu information as a formatted string.
+    """
     try: 
         today_number = datetime.now().date().weekday() + 1
         result = ""
@@ -39,14 +57,13 @@ def parse_mensa_data(mensa_data):
                                 result += f"- Price for {customer_group_desc}: {price_value}\n"
                             
                             contains_gluten = any(allergy.get("code") == 10 for allergy in meal.get("allergen-array", []))
-                            result += "Sorry, it has Gluten :( \n" if contains_gluten else "Whueee, no Gluten\n"
+                            result += "Sorry, it has Gluten :( \n" if contains_gluten else "Whueee, no Gluten"
                             
                             # Check if it's the last item
-                            if idx == last_line:
-                                result = result.rstrip("\n")
+                            if idx != last_line:
+                                result += "\n"
         
         return result
     except Exception as e:
         print(f"An error occurred: {e}")
         return None
-

@@ -1,8 +1,18 @@
-import requests
-from datetime import date
-from bs4 import BeautifulSoup
+import requests  # for making HTTP requests
+from datetime import date  # for getting the current date
+from bs4 import BeautifulSoup  # for parsing HTML
 
-def generate_menu_msg(menu_type, menu_data):
+def generate_menu_msg(menu_type: str, menu_data: dict) -> str:
+    """
+    Generate a formatted message for the menu.
+
+    Parameters:
+    - menu_type (str): The type of menu.
+    - menu_data (dict): Dictionary containing menu information.
+
+    Returns:
+    - str: The formatted message for the menu.
+    """
     msg = f"*{menu_type.upper()}*\n"
     msg += f"{menu_data.get('menu', '')}\nF: {get_nutrition(menu_data.get('weight', ''), menu_data.get('fat', ''), True)}, K: {get_nutrition(menu_data.get('weight', ''), menu_data.get('carbohydrates', ''), True)}, P: {get_nutrition(menu_data.get('weight', ''), menu_data.get('protein', ''), True)}\nCalories: {get_nutrition(menu_data.get('weight', ''), menu_data.get('calories', ''), False)}\n"
     msg += f"- Price for Stud: {menu_data.get('price_student', '')}\n"
@@ -11,7 +21,18 @@ def generate_menu_msg(menu_type, menu_data):
     msg += "Whueee, no Gluten\n" if (not menu_data.get('contains_gluten', False)) else "Sorry, it has Gluten :( \n"
     return msg
 
-def get_nutrition(weight, nutrition, gram):
+def get_nutrition(weight: str, nutrition: str, gram: bool) -> str:
+    """
+    Calculate nutrition value based on weight and nutrition information.
+
+    Parameters:
+    - weight (str): The weight of the food.
+    - nutrition (str): The nutritional information.
+    - gram (bool): Flag indicating whether the result should be in grams.
+
+    Returns:
+    - str: The calculated nutrition value.
+    """
     try:
         nutrition_str, weight_str = nutrition.split(" ")[0], weight.split(" ")[0]
         nutrition = float(nutrition_str)
@@ -21,7 +42,17 @@ def get_nutrition(weight, nutrition, gram):
     except ValueError:
         return "There was an error calculating the nutrition value."
 
-def parse_uni_html(menu_type, html):
+def parse_uni_html(menu_type: str, html: str) -> dict:
+    """
+    Parse HTML to extract menu data.
+
+    Parameters:
+    - menu_type (str): The type of menu.
+    - html (str): The HTML content to parse.
+
+    Returns:
+    - dict: A dictionary containing menu data.
+    """
     try:
         soup = BeautifulSoup(html, 'html.parser')
         menu = soup.find('h1', class_='sc-150998b9-4 bUDPpG').text.strip()
@@ -50,12 +81,23 @@ def parse_uni_html(menu_type, html):
         print(f"An error occurred: {e}")
         return None
 
-def get_uni_msg(upperLower, menu_vegi, menu_meet):
+def get_uni_msg(upper_lower: str, menu_vegi: str, menu_meet: str) -> str:
+    """
+    Get menu message for vegetarian and meat options.
+
+    Parameters:
+    - upper_lower (str): Upper or Lower case of the university.
+    - menu_vegi (str): Name of the vegetarian menu.
+    - menu_meet (str): Name of the meat menu.
+
+    Returns:
+    - str: The formatted message containing menu information.
+    """
     current_date = str(date.today())
     uni_msg = ""
     urls = [
-        f"https://app.food2050.ch/uzh-zentrum/{upperLower}/food-profile/{current_date}-{menu_vegi}",
-        f"https://app.food2050.ch/uzh-zentrum/{upperLower}/food-profile/{current_date}-{menu_meet}"
+        f"https://app.food2050.ch/uzh-zentrum/{upper_lower}/food-profile/{current_date}-{menu_vegi}",
+        f"https://app.food2050.ch/uzh-zentrum/{upper_lower}/food-profile/{current_date}-{menu_meet}"
     ]
     for url in urls:
         response = requests.get(url)
