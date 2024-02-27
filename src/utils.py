@@ -1,5 +1,3 @@
-import requests
-import json
 from datetime import date, timedelta
 
 def generate_menu_msg(menus):
@@ -17,8 +15,6 @@ def is_float(string):
     except ValueError:
         return False
 
-def send_msg(data, url, headers):
-    return requests.post(url, headers=headers, data=json.dumps(data))
 
 def time_range():
     today = date.today()
