@@ -41,7 +41,7 @@ def parse_mensa_data(mensa_data: dict) -> str:
                 for opening_hour in day.get("opening-hour-array", []):
                     for meal_time in opening_hour.get("meal-time-array", []):
                         last_line = len(meal_time.get("line-array", [])) - 1
-                        for idx, line in enumerate(meal_time.get("line-array", [])):
+                        for line in enumerate(meal_time.get("line-array", [])):
                             line_name = line.get("name", "").lower()
                             if line_name not in ["street", "garden", "home", "vegan"]:
                                 continue
@@ -57,11 +57,8 @@ def parse_mensa_data(mensa_data: dict) -> str:
                                 result += f"- Price for {customer_group_desc}: {price_value}\n"
                             
                             contains_gluten = any(allergy.get("code") == 10 for allergy in meal.get("allergen-array", []))
-                            result += "Sorry, it has Gluten :( \n" if contains_gluten else "Whueee, no Gluten"
-                            
-                            # Check if it's the last item
-                            if idx != last_line:
-                                result += "\n"
+                            result += "Sorry, it has Gluten :( \n" if contains_gluten else "Whueee, no Gluten\n"
+
         
         return result
     except Exception as e:
