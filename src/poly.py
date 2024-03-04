@@ -58,9 +58,7 @@ def parse_mensa_data(mensa_data: dict) -> str:
                             
                             contains_gluten = any(allergy.get("code") == 10 for allergy in meal.get("allergen-array", []))
                             result += "Sorry, it has Gluten :( \n" if contains_gluten else "Whueee, no Gluten\n"
-
-        
-        return result
+        return result.strip()
     except Exception as e:
         print(f"An error occurred: {e}")
         return None

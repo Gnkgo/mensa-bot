@@ -108,4 +108,4 @@ def get_uni_msg(upper_lower: str, menu_vegi: str, menu_meet: str) -> str:
                     uni_msg += generate_menu_msg(menu_data['menu_type'], menu_data)
             except Exception as e:
                 print(f"An error occurred: {e}")
-    return uni_msg
+    return uni_msg.strip()
