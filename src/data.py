@@ -7,6 +7,37 @@ from poly import fetch_mensa_data, parse_mensa_data
 from uni import get_uni_msg
 from utils import time_range
 
+last_monday, next_sunday = time_range()
+
+# Define facility ID for polymensa
+facility_id_polymensa = 9
+
+# Fetch mensa data
+mensa_data = fetch_mensa_data(f"https://idapps.ethz.ch/cookpit-pub-services/v1/weeklyrotas/?client-id=ethz-wcms&lang=de&rs-first=0&rs-size=50&valid-after={last_monday}&valid-before={next_sunday}&facility={facility_id_polymensa}")
+
+# Parse mensa data for polymensa
+poly_msg = parse_mensa_data(mensa_data)
+
+# Get messages for university mensas
+uni_msg = get_uni_msg("obere-mensa", "mittagsverpflegung-farm", "mittagsverpflegung-butcher")
+uni_msg_lower = get_uni_msg("untere-mensa", "mittag-garden", "mittag-pure-asia")
+
+
+# Read credentials from config file
+current_directory = os.path.dirname(os.path.abspath(__file__))
+config_file_path = os.path.join(current_directory, "..", "externalData", "config.ini")
+config = configparser.ConfigParser()
+config.read(config_file_path)
+credentialFilePath = config['Paths']['credentialFilePath']
+
+with open(credentialFilePath) as credential_file:
+    credential_data = json.load(credential_file)
+
+phone_number_id = credential_data["phone_number_id"]
+access_token = credential_data["access_token"]
+recipient_phone_number = credential_data["recipient_phone_number"]
+
+
 def send_msg(data: dict) -> requests.Response:
     """
     Send a message using Facebook Graph API.
@@ -25,6 +56,7 @@ def send_msg(data: dict) -> requests.Response:
     return requests.post(url, headers=headers, data=json.dumps(data))
 
 def get_templates_data() -> dict:
+    
     """
     Get template data for different messages.
 
@@ -87,31 +119,5 @@ def empty_message() -> dict:
         'polymensa': not poly_msg
     }
 
-last_monday, next_sunday = time_range()
 
-# Define facility ID for polymensa
-facility_id_polymensa = 9
 
-# Read credentials from config file
-current_directory = os.path.dirname(os.path.abspath(__file__))
-config_file_path = os.path.join(current_directory, "..", "externalData", "config.ini")
-config = configparser.ConfigParser()
-config.read(config_file_path)
-credentialFilePath = config['Paths']['credentialFilePath']
-
-with open(credentialFilePath) as credential_file:
-    credential_data = json.load(credential_file)
-
-phone_number_id = credential_data["phone_number_id"]
-access_token = credential_data["access_token"]
-recipient_phone_number = credential_data["recipient_phone_number"]
-
-# Fetch mensa data
-mensa_data = fetch_mensa_data(f"https://idapps.ethz.ch/cookpit-pub-services/v1/weeklyrotas/?client-id=ethz-wcms&lang=de&rs-first=0&rs-size=50&valid-after={last_monday}&valid-before={next_sunday}&facility={facility_id_polymensa}")
-
-# Get messages for university mensas
-uni_msg = get_uni_msg("obere-mensa", "mittagsverpflegung-farm", "mittagsverpflegung-butcher")
-uni_msg_lower = get_uni_msg("untere-mensa", "mittag-garden", "mittag-pure-asia")
-
-# Parse mensa data for polymensa
-poly_msg = parse_mensa_data(mensa_data)

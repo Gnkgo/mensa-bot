@@ -4,9 +4,10 @@ from data import get_templates_data, empty_message, send_msg  # importing necess
 import time  # for time-related functions
 
 if __name__ == "__main__":
+    
     # Get template messages
     template_messages = get_templates_data()
-
+    
     # Send welcome message
     response1 = send_msg(template_messages['welcome'])
     print(f"Whatsapp API status: {response1.status_code}" + ("" if response1.status_code == 200 else f" - {response1.content}"))
