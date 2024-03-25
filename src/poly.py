@@ -32,7 +32,6 @@ def parse_mensa_data(mensa_data: dict) -> str:
     try: 
         today_number = datetime.now().date().weekday() + 1
         result = ""
-        print("Today number: ", today_number)
         
         for weekly_rota in mensa_data.get("weekly-rota-array", []):
             for day in weekly_rota.get("day-of-week-array", []):
